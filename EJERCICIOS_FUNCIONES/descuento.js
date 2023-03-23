@@ -1,15 +1,22 @@
 function descuento(a,b) {
     if(a==1){
-        return b;
+        var precio = a*b;
+        return precio;
     } else {
         if(2<=a && a<=4) {
-            return (a*b-a*b*10/100);
+            var precio = a*b;
+            var descuento = a*b*10/100;
+            return (precio-descuento);
         } else {
             if(5<=a && a<=10) {
-                return (a*b-a*b*20/100);
+                var precio = a*b;
+                var descuento = a*b*20/100;
+                return (precio-descuento);
             } else {
                 if(a<=11) {
-                    return (a*b-a*b*30/100);
+                    var precio = a*b;
+                    var descuento = a*b*30/100;
+                    return (precio-descuento);
                 }
             }
         }
